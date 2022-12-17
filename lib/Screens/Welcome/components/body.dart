@@ -22,7 +22,7 @@ class Body extends StatelessWidget {
           children: <Widget>[
             const Text(
               "Welcome To Brain Cells",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
             ),
             SizedBox(height: size.height * 0.02),
             ClipRRect(

@@ -21,51 +21,53 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Background(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            "LOGIN",
-            style: TextStyle(fontWeight: FontWeight.bold),
-          ),
-          SizedBox(
-            height: size.height * 0.03,
-          ),
-          SvgPicture.asset(
-            "assets/icons/braincaell-logo2.svg",
-            height: size.height * 0.4,
-          ),
-          SizedBox(
-            height: size.height * 0.001,
-          ),
-          RoundedInputField(
-            hintText: "Email address",
-            onChanged: (value) {},
-            key: null,
-          ),
-          RoundedPasswordField(
-            onChanged: (value) {},
-          ),
-          SizedBox(
-            height: size.height * 0.02,
-          ),
-          RoundedButton(
-            text: "LOGIN",
-            press: () {},
-          ),
-          AlreadyHaveAnAccountCheck(
-            press: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) {
-                    return SignUpScreen();
-                  },
-                ),
-              );
-            },
-          ),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              "LOGIN",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: size.height * 0.03,
+            ),
+            SvgPicture.asset(
+              "assets/icons/braincaell-logo2.svg",
+              height: size.height * 0.4,
+            ),
+            SizedBox(
+              height: size.height * 0.001,
+            ),
+            RoundedInputField(
+              hintText: "Email address",
+              onChanged: (value) {},
+              key: null,
+            ),
+            RoundedPasswordField(
+              onChanged: (value) {},
+            ),
+            SizedBox(
+              height: size.height * 0.02,
+            ),
+            RoundedButton(
+              text: "LOGIN",
+              press: () {},
+            ),
+            AlreadyHaveAnAccountCheck(
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return SignUpScreen();
+                    },
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
