@@ -1,11 +1,14 @@
 import 'package:brain_cells/Screens/Login/components/background.dart';
+import 'package:brain_cells/Screens/Signup/signup_screen.dart';
 import 'package:brain_cells/components/already_have_an_account_check.dart';
+import 'package:brain_cells/components/rounded_button.dart';
 import 'package:brain_cells/components/rounded_input_field.dart';
 import 'package:brain_cells/components/text_field_container.dart';
 import 'package:brain_cells/constants.dart';
 import 'package:brain_cells/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:brain_cells/Screens/Signup/signup_screen.dart';
 
 import '../../../components/rounded_password_field.dart';
 
@@ -25,9 +28,15 @@ class Body extends StatelessWidget {
             "LOGIN",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
+          SizedBox(
+            height: size.height * 0.03,
+          ),
           SvgPicture.asset(
-            "assets/icons/1(1).svg",
-            height: size.height * 0.35,
+            "assets/icons/braincaell-logo2.svg",
+            height: size.height * 0.4,
+          ),
+          SizedBox(
+            height: size.height * 0.001,
           ),
           RoundedInputField(
             hintText: "Email address",
@@ -37,8 +46,24 @@ class Body extends StatelessWidget {
           RoundedPasswordField(
             onChanged: (value) {},
           ),
-          AlreadyHaveAnAccountCheck(
+          SizedBox(
+            height: size.height * 0.02,
+          ),
+          RoundedButton(
+            text: "LOGIN",
             press: () {},
+          ),
+          AlreadyHaveAnAccountCheck(
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return SignUpScreen();
+                  },
+                ),
+              );
+            },
           ),
         ],
       ),
