@@ -9,7 +9,7 @@ import 'package:brain_cells/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:brain_cells/Screens/Signup/signup_screen.dart';
-
+import 'package:brain_cells/Screens/Profile/profile_page_screen';
 import '../../../components/rounded_password_field.dart';
 
 class Body extends StatelessWidget {
@@ -52,7 +52,16 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return ProfilePageScreen();
+                    },
+                  ),
+                );
+              },
             ),
             AlreadyHaveAnAccountCheck(
               press: () {

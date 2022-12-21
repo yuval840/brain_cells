@@ -8,6 +8,7 @@ import 'package:brain_cells/components/rounded_input_field.dart';
 import 'package:brain_cells/components/rounded_password_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:brain_cells/components/name_input_field';
 
 class Body extends StatelessWidget {
   final Widget child;
@@ -30,12 +31,20 @@ class Body extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: size.height * 0.03),
+            SizedBox(height: size.height * 0.02),
             SvgPicture.asset(
               "assets/icons/1(1).svg",
               height: size.height * 0.3,
             ),
-            SizedBox(height: size.height * 0.03),
+            SizedBox(height: size.height * 0.02),
+            NameInputField(
+              hintText: 'Name',
+              onChanged: (value) {},
+            ),
+            NameInputField(
+              hintText: 'Last Name',
+              onChanged: (value) {},
+            ),
             RoundedInputField(
               hintText: "Email Adrress",
               onChanged: (value) {},
@@ -43,7 +52,7 @@ class Body extends StatelessWidget {
             RoundedPasswordField(
               onChanged: (value) {},
             ),
-            SizedBox(height: size.height * 0.03),
+            SizedBox(height: size.height * 0.01),
             RoundedButton(
               text: "Sing Up",
               press: () {},
