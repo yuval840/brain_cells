@@ -4,7 +4,8 @@ import 'package:brain_cells/Screens/Welcome/components/Background.dart';
 import 'package:brain_cells/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_database/firebase_database.dart';
 import '../../../components/rounded_button.dart';
 
 class Body extends StatelessWidget {
@@ -40,7 +41,7 @@ class Body extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return const LoginScreen();
+                      return LoginScreen();
                     },
                   ),
                 );

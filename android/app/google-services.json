@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "431489270153",
+    "project_id": "brain-cells2",
+    "storage_bucket": "brain-cells2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431489270153:android:166af76aa7bdc344452158",
+        "android_client_info": {
+          "package_name": "com.example.brain_cells"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431489270153-v4cbq523lgarp096r9724ccf75rkk7fp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiCBmEtLsX0KfmG0T7l0QIo-xs7MVBqCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431489270153-v4cbq523lgarp096r9724ccf75rkk7fp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "431489270153-mrcf2mmui9vbgjerh4jajojk9g7b38bv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.brainCells"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
